@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "pg": "^8.11.5"
+  },
+  "name": "desafioevaluadoalwaysmusicv2",
+  "version": "1.0.0",
+  "description": "Desafio Always Music Volumen 2",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --env-file=.env index.js"
+  },
+  "author": "Jaoc",
+  "license": "ISC"
+}

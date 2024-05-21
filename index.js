@@ -29,7 +29,6 @@ const buscarEstudiantes = async () =>
         console.log(code);
     }
 }
-//buscarEstudiantes();
 
 const ingresarEstudiante = async () =>
 {
@@ -52,8 +51,6 @@ const ingresarEstudiante = async () =>
     }
 }
 
-//ingresarEstudiante();
-
 const editarEstudiante = async () =>
 {
     try 
@@ -74,7 +71,6 @@ const editarEstudiante = async () =>
         console.log(code);
     }
 }
-//editarEstudiante();
 
 const buscarEstudiante = async () =>
 {
@@ -95,7 +91,6 @@ const buscarEstudiante = async () =>
         console.log(code);
     }
 }
-//buscarEstudiante();
 
 const eliminarEstudiante = async () =>
 {
@@ -109,11 +104,18 @@ const eliminarEstudiante = async () =>
         }
         const response = await pool.query(queryConfig);
         console.log("Estudiante Eliminado Con Exito.");
+        console.log(response.rows);
     } 
     catch (error) 
     {
         const { code } = error;
-        console.log(code);
+        return code;
     }
 }
-eliminarEstudiante();
+
+//ingresarEstudiante();
+buscarEstudiantes();
+//buscarEstudiante();
+//editarEstudiante();
+//eliminarEstudiante();
+

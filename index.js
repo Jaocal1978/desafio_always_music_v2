@@ -10,6 +10,17 @@ const config = {
 
 const pool = new Pool(config);
 
+/* Alumnos en mi base de datos
+[
+  [ 6, 'Brian May', '12.345.678-9', 'Guitarra', 7 ],
+  [ 7, 'Jorge Gonzalez', '10.854.965-4', 'Guitarra', 10 ],
+  [ 9, 'Madonna', '9.999.632-9', 'vocal', 10 ],
+  [ 8, 'Juan Perez', '15.698.874-5', 'Trompeta', 8 ],
+  [ 10, 'Alanis Morissette', '11.658.365-9', 'Guitarra', 10 ],
+  [ 15, 'Carmen Araya', '14.357.957-4', 'Bateria', 4 ],
+  [ 18, 'Juan Abarca', '16.369.258-8', 'Xilofono', 6 ]
+]*/
+
 //Ej: buscar
 const buscarEstudiantes = async () =>
 {
@@ -119,8 +130,8 @@ const eliminarEstudiante = async () =>
 }
 
 //ingresarEstudiante();
-buscarEstudiantes();
-//buscarEstudiante();
+//buscarEstudiantes();
+buscarEstudiante();
 //editarEstudiante();
 //eliminarEstudiante();
 

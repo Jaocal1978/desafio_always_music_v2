@@ -10,6 +10,7 @@ const config = {
 
 const pool = new Pool(config);
 
+//Ej: buscar
 const buscarEstudiantes = async () =>
 {
     try
@@ -30,6 +31,7 @@ const buscarEstudiantes = async () =>
     }
 }
 
+//Ej: nuevo 'Guillermo Castro' '19.587.654-6' 'bajo' 5
 const ingresarEstudiante = async () =>
 {
     try 
@@ -51,6 +53,7 @@ const ingresarEstudiante = async () =>
     }
 }
 
+//Ej: editar 'Guillermo Castro' '19.587.654-6' 'clarinete' 2 22
 const editarEstudiante = async () =>
 {
     try 
@@ -72,6 +75,7 @@ const editarEstudiante = async () =>
     }
 }
 
+//Ej: buscar_estudiante '19.587.654-6'
 const buscarEstudiante = async () =>
 {
     try 
@@ -92,6 +96,7 @@ const buscarEstudiante = async () =>
     }
 }
 
+//Ej: eliminar '19.587.654-6'
 const eliminarEstudiante = async () =>
 {
     try 

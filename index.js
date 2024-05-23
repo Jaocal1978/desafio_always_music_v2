@@ -51,7 +51,7 @@ const ingresarEstudiante = async () =>
         const queryConfig = {
             text : queryInsert,
             values : [process.argv[3], process.argv[4], process.argv[5], Number(process.argv[6])],
-            rowMode : "json"
+            rowMode : "array"
         }
         const response = await pool.query(queryConfig);
         console.log('Estudiante Agregado con Exito.');
@@ -73,7 +73,7 @@ const editarEstudiante = async () =>
         const queryConfig = {
             text : queryUpdate,
             values : [process.argv[3], process.argv[4], process.argv[5], Number(process.argv[6]), Number(process.argv[7])],
-            rowMode : "json"
+            rowMode : "array"
         }
         const response = await pool.query(queryConfig);
         console.log("Estudiante Actualizado con exito.");
@@ -95,7 +95,7 @@ const buscarEstudiante = async () =>
         const queryConfig = {
             text : querySearch,
             values : [process.argv[3]],
-            rowMode : "json"
+            rowMode : "array"
         }
         const response = await pool.query(queryConfig);
         console.log(response.rows);
@@ -116,7 +116,7 @@ const eliminarEstudiante = async () =>
         const queryConfig = {
             text : queryDelete,
             values : [process.argv[3]],
-            rowMode : "json"
+            rowMode : "array"
         }
         const response = await pool.query(queryConfig);
         console.log("Estudiante Eliminado Con Exito.");
